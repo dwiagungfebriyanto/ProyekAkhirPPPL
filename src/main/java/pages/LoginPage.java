@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
     LoginObject loginObject;
+    String loginUrl = "http://localhost:5173/login";
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -38,5 +39,9 @@ public class LoginPage extends BasePage {
 
     public void clearPassword() throws InterruptedException {
         clearText(loginObject.getInputPassword());
+    }
+
+    public String getLoginUrl() {
+        return loginUrl;
     }
 }

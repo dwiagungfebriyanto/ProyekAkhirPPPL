@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class DaftarAlatPage extends BasePage {
     DaftarAlatObject daftarAlatObject;
+    String daftarAlatUrl = "http://localhost:5173/app/daftar-alat";
 
     public DaftarAlatPage(WebDriver driver) {
         super(driver);
@@ -17,5 +18,9 @@ public class DaftarAlatPage extends BasePage {
 
     public String  getActualUrl() {
         return driver.getCurrentUrl();
+    }
+
+    public String getDaftarAlatUrl() {
+        return daftarAlatUrl;
     }
 }

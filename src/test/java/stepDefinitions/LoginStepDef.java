@@ -15,8 +15,6 @@ public class LoginStepDef {
     WebDriver driver;
     LoginPage loginPage;
     DaftarAlatPage daftarAlatPage;
-    String loginUrl = "http://localhost:5173/login";
-    String daftarAlatUrl = "http://localhost:5173/app/daftar-alat";
 
     @Before
     public void setUp() {
@@ -30,7 +28,7 @@ public class LoginStepDef {
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
         // Membuka URL halaman login
-        driver.get(loginUrl);
+        driver.get(loginPage.getLoginUrl());
         driver.manage().window().maximize();
     }
 
@@ -46,7 +44,7 @@ public class LoginStepDef {
         loginPage.clearPassword();
         loginPage.enterPassword("password");
 
-        // Klik tombol submit
+        // Klik tombol masuk
         loginPage.clickSubmitBtn();
     }
 
@@ -56,7 +54,7 @@ public class LoginStepDef {
         daftarAlatPage.getNavLink();
         // Mendapatkan URL saat ini dan memverifikasinya
         String actualUrl = driver.getCurrentUrl();
-        Assertions.assertEquals(daftarAlatUrl, actualUrl);
+        Assertions.assertEquals(daftarAlatPage.getDaftarAlatUrl(), actualUrl);
     }
 
     @When("user submits {string} and {string}")
@@ -71,7 +69,7 @@ public class LoginStepDef {
         loginPage.clearPassword();
         loginPage.enterPassword(password);
 
-        // Klik tombol submit
+        // Klik tombol masuk
         loginPage.clickSubmitBtn();
     }
 
@@ -82,7 +80,7 @@ public class LoginStepDef {
 
         // Mendapatkan URL saat ini dan memverifikasinya
         String actualUrl = driver.getCurrentUrl();
-        Assertions.assertEquals(loginUrl, actualUrl);
+        Assertions.assertEquals(loginPage.getLoginUrl(), actualUrl);
     }
 
     @After

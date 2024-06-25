@@ -8,7 +8,7 @@ Feature: Student Register
 
   Scenario Outline: Student register with invalid credentials on account details
     Given user is on the register page
-    When user submits <email>, <phone>, <password>, and <passwordConfirmation>
+    When user submits "<email>", "<phone>", "<password>", and "<passwordConfirmation>"
     Then user cannot proceed to the personal information section
 
   Examples:
@@ -20,14 +20,14 @@ Feature: Student Register
 
   Scenario Outline: Student register with invalid credentials on personal information section
     Given user is on the register page
-    And user submits valid credentials on account details section
-    When user submits <name>, <nisn>, <class>, <dateOfBirth>, and <entryYear>
-    Then students cannot register an account
+    When user submits valid credentials on account details
+    And user submits "<name>", "<nisn>", "<class>", "<dateOfBirth>", and "<entryYear>"
+    Then user cannot register an account
 
   Examples:
     | name          | nisn            | class           | dateOfBirth         | entryYear         |
-    |               | 12345           | X RPL 1         | 12-03-2004          | 2022              |
-    | student       |                 | X RPL 1         | 12-03-2004          | 2022              |
-    | student       | 12345           |                 | 12-03-2004          | 2022              |
+    |               | 12345           | X RPL 1         | 12/March/2004       | 2022              |
+    | student       |                 | X RPL 1         | 12/March/2004       | 2022              |
+    | student       | 12345           |                 | 12/March/2004       | 2022              |
     | student       | 12345           | X RPL 1         |                     | 2022              |
-    | student       | 12345           | X RPL 1         | 12-03-2004          |                   |
+    | student       | 12345           | X RPL 1         | 12/March/2004       |                   |

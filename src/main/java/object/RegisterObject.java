@@ -89,10 +89,6 @@ public class RegisterObject {
         return By.id("btn-prev");
     }
 
-    public By getClassDropdown() {
-        return By.id("v-menu-21");
-    }
-
     public WebElement getMonthDropdown() {
         return driver.findElement(By.className("flatpickr-monthDropdown-months"));
     }

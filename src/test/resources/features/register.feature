@@ -26,8 +26,8 @@ Feature: Student Register
 
   Examples:
     | name          | nisn            | class           | dateOfBirth         | entryYear         |
-    |               | 12345           | X RPL 1         | 12/March/2004       | 2022              |
-    | student       |                 | X RPL 1         | 12/March/2004       | 2022              |
+    |               | 12345           | XII Multimedia  | 12/March/2004       | 2022              |
+    | student       |                 | XII Multimedia  | 12/March/2004       | 2022              |
     | student       | 12345           |                 | 12/March/2004       | 2022              |
-    | student       | 12345           | X RPL 1         |                     | 2022              |
-    | student       | 12345           | X RPL 1         | 12/March/2004       |                   |
+    | student       | 12345           | XII Multimedia  |                     | 2022              |
+    | student       | 12345           | XII Multimedia  | 12/March/2004       |                   |

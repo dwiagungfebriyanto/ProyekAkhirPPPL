@@ -121,11 +121,6 @@ public class RegisterPage extends BasePage {
         click(registerObject.getDropdownClass());
     }
 
-    public String dropdown() {
-        WebElement dropdown = driver.findElement(registerObject.getClassDropdown());
-        return dropdown.getAttribute("innerHTML");
-    }
-
     public void clickDateOfBirth() throws InterruptedException {
         click(registerObject.getInputDateOfBirth());
     }

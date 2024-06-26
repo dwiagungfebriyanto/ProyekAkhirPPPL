@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -26,6 +24,15 @@ public class BasePage {
         waitForElementVisible(by).isDisplayed();
     }
 
+    public boolean verifyElementNotPresent(By by) {
+        try {
+            driver.findElement(by);
+            return false;
+        } catch (NoSuchElementException e) {
+            return true;
+        }
+    }
+
     public void click(By by) throws InterruptedException {
         waitForElementVisible(by).click();
     }
@@ -36,5 +43,14 @@ public class BasePage {
 
     public void clearText(By by) throws InterruptedException {
         waitForElementVisible(by).clear();
+    }
+
+    public void backspaceText(By by) throws InterruptedException {
+        waitForElementVisible(by).sendKeys(Keys.BACK_SPACE);
+    }
+
+    public void scrollToBottom() {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 }

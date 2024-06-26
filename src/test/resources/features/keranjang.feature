@@ -26,15 +26,15 @@ Feature: Cart
     And user submits: "<numberOfTools>", "<borrowingDate>", "<returnDate>", "<subject>", and "<notes>"
     Then a tool loan request should not be sent
 
-  Examples:
-    | numberOfTools    | borrowingDate   | returnDate      | subject                      | notes           |
-    | 10000            | 1/July/2024     | 2/July/2024     | Algoritma dan Struktur Data  | Testing         |
-    | -1               | 1/July/2024     | 2/July/2024     | Algoritma dan Struktur Data  | Testing         |
-    | 1                | 1/June/2024     | 2/June/2024     | Algoritma dan Struktur Data  | Testing         |
-    | 1                |                 | 2/July/2024     | Algoritma dan Struktur Data  | Testing         |
-    | 1                | 1/July/2024     |                 | Algoritma dan Struktur Data  | Testing         |
-    | 1                | 1/July/2024     | 2/July/2024     | Algoritma dan Struktur Data  |                 |
-    | 1                |                 |                 |                              |                 |
+    Examples:
+      | numberOfTools    | borrowingDate   | returnDate      | subject                              | notes           |
+      | 10000            | 1/July/2024     | 2/July/2024     | Teknik Pengukuran dan Instrumentasi  | Testing         |
+      | -1               | 1/July/2024     | 2/July/2024     | Teknik Pengukuran dan Instrumentasi  | Testing         |
+      | 1                | 1/June/2024     | 2/June/2024     | Teknik Pengukuran dan Instrumentasi  | Testing         |
+      | 1                |                 | 2/July/2024     | Teknik Pengukuran dan Instrumentasi  | Testing         |
+      | 1                | 1/July/2024     |                 | Teknik Pengukuran dan Instrumentasi  | Testing         |
+      | 1                | 1/July/2024     | 2/July/2024     | Teknik Pengukuran dan Instrumentasi  |                 |
+      | 1                |                 |                 |                                      |                 |
 
   Scenario: Successfully submit a tool loan request with empty subject
     Given user is on the Cart page

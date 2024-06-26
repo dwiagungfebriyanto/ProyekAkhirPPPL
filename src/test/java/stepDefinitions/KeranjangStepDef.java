@@ -143,7 +143,7 @@ public class KeranjangStepDef {
         keranjangPage.enterReturnDate("2/July/2024");
 
         keranjangPage.clickSubject(isCartNotEmpty);
-        keranjangPage.enterSubject("Algoritma dan Struktur Data");
+        keranjangPage.enterSubject("Teknik Pengukuran dan Instrumentasi");
 
         keranjangPage.clickNotes(isCartNotEmpty);
         keranjangPage.enterNotes("Testing");
@@ -155,7 +155,7 @@ public class KeranjangStepDef {
         Thread.sleep(2000);
         keranjangPage.scrollToBottom();
 
-        test.log(Status.INFO, "VALID DATA: borrowing date: 1/July/2024, return date: 2/July/2024, subject: Algoritma dan Struktur Data, and notes: Testing");
+        test.log(Status.INFO, "VALID DATA: borrowing date: 1/July/2024, return date: 2/July/2024, subject: Teknik Pengukuran dan Instrumentasi, and notes: Testing");
         Hooks.currentStep = "User submits valid required data";
     }
 

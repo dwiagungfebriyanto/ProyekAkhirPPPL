@@ -25,9 +25,9 @@ Feature: Student Register
     Then user cannot register an account
 
   Examples:
-    | name          | nisn            | class           | dateOfBirth         | entryYear         |
-    |               | 12345           | XII Multimedia  | 12/March/2004       | 2022              |
-    | student       |                 | XII Multimedia  | 12/March/2004       | 2022              |
-    | student       | 12345           |                 | 12/March/2004       | 2022              |
-    | student       | 12345           | XII Multimedia  |                     | 2022              |
-    | student       | 12345           | XII Multimedia  | 12/March/2004       |                   |
+    | name          | nisn                 | class                           | dateOfBirth         | entryYear         |
+    |               | 8347734944           | X Teknik Komputer dan Jaringan  | 12/March/2004       | 2022              |
+    | student       |                      | X Teknik Komputer dan Jaringan  | 12/March/2004       | 2022              |
+    | student       | 8347734944           |                                 | 12/March/2004       | 2022              |
+    | student       | 8347734944           | X Teknik Komputer dan Jaringan  |                     | 2022              |
+    | student       | 8347734944           | X Teknik Komputer dan Jaringan  | 12/March/2004       |                   |

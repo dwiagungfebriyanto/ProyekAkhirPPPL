@@ -1,6 +1,6 @@
 Feature: Cart
 
-  Background:
+  Background: User login as student
     Given user is on the login page
     And user submits valid credentials
 

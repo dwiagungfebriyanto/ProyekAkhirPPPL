@@ -25,7 +25,7 @@ public class DaftarAlatPage extends BasePage {
         verifyElementVisible(daftarAlatObject.getAddedToCartBtn());
     }
 
-    public String getFirstItemName() throws InterruptedException {
+    public String getFirstItemName() {
         WebElement itemName = driver.findElement(daftarAlatObject.getFirstItemName());
         return itemName.getText();
     }

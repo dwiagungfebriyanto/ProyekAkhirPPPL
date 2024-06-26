@@ -1,6 +1,5 @@
 package pages;
 
-import io.cucumber.java.sl.In;
 import object.LoginObject;
 import org.openqa.selenium.WebDriver;
 

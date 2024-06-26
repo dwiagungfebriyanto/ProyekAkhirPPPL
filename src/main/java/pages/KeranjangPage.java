@@ -79,7 +79,7 @@ public class KeranjangPage extends BasePage {
             inputText(keranjangObject.getBorrowingInputYear(), year);
 
             String formattedDate = month + " " + day + ", " + year;
-            click(By.xpath("//span[@aria-label='"+ formattedDate  +"'][1]"));
+            click(By.xpath("(//span[@aria-label='"+ formattedDate  +"'])[1]"));
         }
     }
 
@@ -123,7 +123,7 @@ public class KeranjangPage extends BasePage {
         verifyElementVisible(keranjangObject.getSuccessAlert());
     }
 
-    public void noSuccessAlert() throws InterruptedException {
+    public void noSuccessAlert() {
         Assertions.assertTrue(verifyElementNotPresent(keranjangObject.getSuccessAlert()));
     }
 

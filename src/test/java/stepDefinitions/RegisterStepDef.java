@@ -67,11 +67,11 @@ public class RegisterStepDef {
 
         // Melakukan input NISN
         registerPage.clickNisn();
-        registerPage.enterNisn("12345");
+        registerPage.enterNisn("8347734944");
 
         // Melakukan pemilihan kelas
         registerPage.clickClass();
-        registerPage.enterClass("XII Multimedia");
+        registerPage.enterClass("X Teknik Komputer dan Jaringan");
 
         // Melakukan input tanggal lahir
         registerPage.clickDateOfBirth();

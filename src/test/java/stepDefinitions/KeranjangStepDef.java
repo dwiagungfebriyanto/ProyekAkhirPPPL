@@ -155,7 +155,7 @@ public class KeranjangStepDef {
         Thread.sleep(2000);
         keranjangPage.scrollToBottom();
 
-        test.log(Status.INFO, "VALID DATA:\nBorrowing date: 1/July/2024\nReturn date: 2/July/2024\nSubject: Algoritma dan Struktur Data\nNotes: Testing");
+        test.log(Status.INFO, "VALID DATA: borrowing date: 1/July/2024, return date: 2/July/2024, subject: Algoritma dan Struktur Data, and notes: Testing");
         Hooks.currentStep = "User submits valid required data";
     }
 

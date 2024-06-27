@@ -10,10 +10,8 @@ Terdapat beberapa fitur yang diuji pada Sistem Informasi Peminjaman Alat dan Gud
 
 ## Arsitektur
 Sistem informasi ini dibangun menggunakan framework:
-- Frontend: Vue.js
-  Berperan untuk menangani interaksi pengguna dan menampilkan data yang diperoleh dari API.
-- Backend: Laravel 10
-  Untuk memproses permintaan dari frontend, mengakses database, dan menyediakan data melalui API.
+- Vue.js (front-end): berperan untuk menangani interaksi pengguna dan menampilkan data yang diperoleh dari API.
+- Laravel 10 (back-end): untuk memproses permintaan dari frontend, mengakses database, dan menyediakan data melalui API.
 
 ## Dokumentasi Pengujian
 Untuk informasi lebih lanjut mengenai test case sistem, API, dan laporan bug, silakan merujuk pada Google Sheet berikut:

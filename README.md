@@ -22,5 +22,5 @@ Untuk informasi lebih lanjut mengenai test case sistem, API, dan laporan bug, si
 ## Anggota Tim
 Pengujian ini dilakukan oleh:
 - Ajeng Cerelia Evin
-- DWi Agung Febriyanto
+- Dwi Agung Febriyanto
 - Viko Rivanesta

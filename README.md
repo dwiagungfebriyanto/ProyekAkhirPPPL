@@ -17,4 +17,4 @@ Sistem informasi ini dibangun menggunakan framework:
 
 ## Dokumentasi Pengujian
 Untuk informasi lebih lanjut mengenai test case sistem, API, dan laporan bug, silakan merujuk pada Google Sheet berikut:
-[Test Case dan Bug Report]([https://docs.google.com/spreadsheets/d/15Cg2v8W6w3r614hucJJIfYKTGW2l9JgmCI-0_MiC8DQ/edit?gid=105550751#gid=105550751](https://docs.google.com/spreadsheets/d/16r3r3JCI-H0RSstOkxTRoNQEtdJZ9Cx4THmJQrZg2N4/edit?gid=0#gid=0))
+[Test Case dan Bug Report](https://docs.google.com/spreadsheets/d/16r3r3JCI-H0RSstOkxTRoNQEtdJZ9Cx4THmJQrZg2N4/edit?gid=0#gid=0)
